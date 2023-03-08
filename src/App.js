@@ -77,7 +77,7 @@ function App() {
         headings: {
           en: pushHeading,
         },
-        player_ids: ['4dc4927d-3dff-4798-a141-4c015c9c7c81'],
+        segments: ['Subscribed Users'],
       };
       const sendPushNotificationEndpoint = `${BASE_URL}/notification/push_notification`;
       const result = await axios.post(sendPushNotificationEndpoint, data, {
