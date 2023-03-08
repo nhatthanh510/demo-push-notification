@@ -4,9 +4,7 @@ import './App.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const BASE_URL =
-  'http://localhost:8080' ||
-  'https://sigma-notification-service-qpchnpiwvq-od.a.run.app';
+const BASE_URL = 'https://sigma-notification-service-qpchnpiwvq-od.a.run.app';
 const API_KEY = '1ab2c3d4e5f61ab2c3d4e5f6';
 
 function App() {
@@ -79,7 +77,7 @@ function App() {
         headings: {
           en: pushHeading,
         },
-        includePlayerIds: ['4dc4927d-3dff-4798-a141-4c015c9c7c81'],
+        player_ids: ['4dc4927d-3dff-4798-a141-4c015c9c7c81'],
       };
       const sendPushNotificationEndpoint = `${BASE_URL}/notification/push_notification`;
       const result = await axios.post(sendPushNotificationEndpoint, data, {
