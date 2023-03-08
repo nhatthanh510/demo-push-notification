@@ -177,7 +177,7 @@ function App() {
             <input
               onChange={e => setSmsPhoneNumbers(e.target.value)}
               type="text"
-              placeholder={`0199999, 01234545`}
+              placeholder={`+381123445, +381111111`}
               className="input input-bordered w-full"
               value={smsPhoneNumbers}
             />
@@ -242,7 +242,7 @@ function App() {
             <input
               onChange={e => setWhatsappPhoneNumber(e.target.value)}
               type="text"
-              placeholder={`heading`}
+              placeholder={`+381123445`}
               className="input input-bordered w-full"
               value={whatsappPhoneNumber}
             />
