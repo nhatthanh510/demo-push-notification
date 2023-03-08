@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
-import OneSignal from 'react-onesignal';
 import './App.css';
 
 const BASE_URL = 'https://sigma-notification-service-qpchnpiwvq-od.a.run.app';
