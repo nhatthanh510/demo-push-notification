@@ -27,7 +27,7 @@ function App() {
       const formattedEmails = emails.split(',').map(item => item.trim());
       const data = {
         emailSubject,
-        contents: emailContent,
+        emailContent: emailContent,
         emails: formattedEmails,
       };
       const sendEmailEndpoint = `${BASE_URL}/notification/email`;
