@@ -39,7 +39,7 @@ function App() {
       toast('sendEmail success!');
       console.log('sendEmail >>', result);
     } catch (error) {
-      toast.error(error.message);
+      toast.error(error?.response?.data?.message || error?.message);
     }
   };
 
@@ -64,7 +64,7 @@ function App() {
       toast('sendSms success!');
       console.log('sendEmail >>', result);
     } catch (error) {
-      toast.error(error.message);
+      toast.error(error?.response?.data?.message || error?.message);
     }
   };
 
@@ -88,7 +88,7 @@ function App() {
       toast('sendPushNotification success!');
       console.log('result >>', result);
     } catch (error) {
-      toast.error(error.message);
+      toast.error(error?.response?.data?.message || error?.message);
     }
   };
 
@@ -107,7 +107,7 @@ function App() {
       toast('sendWhatsappMessage success!');
       console.log('sendWhatsappMessage >>', result);
     } catch (error) {
-      toast.error(error.message);
+      toast.error(error?.response?.data?.message || error?.message);
     }
   };
 
