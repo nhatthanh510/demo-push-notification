@@ -3,6 +3,7 @@ import axios from 'axios';
 import './App.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Link } from 'react-router-dom';
 
 const BASE_URL = 'https://sigma-notification-service-qpchnpiwvq-od.a.run.app';
 const API_KEY = '1ab2c3d4e5f61ab2c3d4e5f6';
@@ -268,6 +269,15 @@ function Notification() {
           </div>
         </div>
       </div>
+
+      <div className="mt-2 card-actions">
+        <Link to="/about">About</Link>
+      </div>
+
+      <div className="mt-2 card-actions">
+        <Link to="/contact">Contact</Link>
+      </div>
+
       <ToastContainer />
     </>
   );
